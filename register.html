@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registrasi — Takify</title>
+  <link rel="icon" type="image/svg+xml" href="takify-bell.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="account-page">
+  <main class="account-card account-layout account-layout-register">
+    <aside class="account-panel">
+      <a class="account-brand" href="index.html" aria-label="Takify">
+        <img class="account-brand-icon" src="takify-bell.svg" alt="">
+        <span>Takify</span>
+      </a>
+      <div class="account-panel-copy">
+        <span class="account-panel-kicker">MULAI DARI SINI</span>
+        <h2>Atur tugasmu.<br>Beresin satu-satu.</h2>
+        <p>Biar semua rencana dan tugasmu lebih gampang diatur.</p>
+      </div>
+      <div class="auth-preview">
+        <div class="auth-preview-head"><b>Fokus hari ini</b><span data-date="l, d M"></span></div>
+        <article><span class="chip">Produk</span>
+          <h3>Finalisasi landing page Q4</h3>
+          <p>3 dari 4 sub-tugas selesai</p>
+          <div class="progress"><span style="width:75%"></span></div>
+          <small>75% selesai · <span data-date="d M"></span>, 15.00 WIB</small>
+        </article>
+        <div class="preview-reminder">♧ &nbsp; Pengingat di waktu yang tepat</div>
+      </div>
+      <div class="account-panel-note"><span class="account-live-dot"></span> Semua tugas, nggak berantakan lagi.</div>
+    </aside>
+
+    <section class="account-content">
+      <div class="account-heading">
+        <p class="account-eyebrow">BIKIN AKUN BARU</p>
+        <h1>Yuk, gabung!</h1>
+        <p class="muted">Isi data ini dulu, habis itu kamu bisa mulai.</p>
+      </div>
+
+      <div id="error" class="alert alert-error" role="alert" hidden></div>
+
+      <form id="register-form" class="form" novalidate>
+        <label for="nama">Nama lengkap <input id="nama" name="nama" autocomplete="name" maxlength="100" placeholder="Nama kamu" required></label>
+        <label for="email">Email <input id="email" type="email" name="email" autocomplete="email" placeholder="nama@email.com" required></label>
+        <label for="password">Kata sandi <input id="password" type="password" name="password" autocomplete="new-password" minlength="12" placeholder="Minimal 12 karakter" required></label>
+        <label for="password2">Ulangi kata sandi <input id="password2" type="password" name="password2" autocomplete="new-password" minlength="12" placeholder="Masukkan ulang kata sandi" required></label>
+        <button class="btn btn-primary btn-block account-submit" type="submit">Buat akun</button>
+      </form>
+
+      <p class="account-footer">Sudah punya akun? <a href="login.html">Masuk aja</a></p>
+    </section>
+  </main>
+  <script src="store.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>

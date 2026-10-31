@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Takify</title>
+  <link rel="icon" type="image/svg+xml" href="takify-bell.svg">
+  <script>
+    // Pengganti index.php: arahkan ke halaman yang sesuai
+    var s = null;
+    try { s = JSON.parse(sessionStorage.getItem('takify_session')); } catch (e) {}
+    location.replace(s ? (s.role === 'Admin' ? 'fitur.html?p=pengguna' : 'tugas.html') : 'login.html');
+  </script>
+</head>
+<body></body>
+</html>

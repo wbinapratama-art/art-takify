@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Masuk — Takify</title>
+  <link rel="icon" type="image/svg+xml" href="takify-bell.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="account-page">
+  <main class="account-card account-layout">
+    <aside class="account-panel">
+      <a class="account-brand" href="index.html" aria-label="Takify">
+        <img class="account-brand-icon" src="takify-bell.svg" alt="">
+        <span>Takify</span>
+      </a>
+      <div class="account-panel-copy">
+        <span class="account-panel-kicker">TEMPAT KAMU BERESIN TUGAS</span>
+        <h2>Fokus dulu.<br>Tugas beres satu-satu.</h2>
+        <p>Atur tugasmu dengan gampang, lalu fokus ke hal yang paling penting.</p>
+      </div>
+      <div class="auth-preview">
+        <div class="auth-preview-head"><b>Fokus hari ini</b><span data-date="l, d M"></span></div>
+        <div class="focus-slider" aria-live="polite">
+          <article class="focus-slide is-active"><span class="chip">Produk</span>
+            <h3>Finalisasi landing page Q4</h3>
+            <p>3 dari 4 sub-tugas selesai</p>
+            <div class="progress"><span style="width:75%"></span></div>
+            <small>75% selesai · <span data-date="d M"></span>, 15.00 WIB</small>
+          </article>
+          <article class="focus-slide"><span class="chip">Pemasaran</span>
+            <h3>Penyusunan kalender konten mingguan</h3>
+            <p>5 dari 7 sub-tugas selesai</p>
+            <div class="progress"><span style="width:71%"></span></div>
+            <small>71% selesai · <span data-date="d M"></span>, 17.00 WIB</small>
+          </article>
+        </div>
+        <div class="focus-slider-dots" aria-label="Navigasi produk">
+          <button class="is-active" type="button" aria-label="Produk 1"></button>
+          <button type="button" aria-label="Produk 2"></button>
+        </div>
+        <div class="preview-reminder">♧ &nbsp; Pengingat di waktu yang tepat</div>
+      </div>
+      <div class="account-panel-note"><span class="account-live-dot"></span> Pelan-pelan, yang penting beres.</div>
+    </aside>
+
+    <section class="account-content">
+      <div class="account-heading">
+        <p class="account-eyebrow">WELCOME BACK!</p>
+        <h1>Masuk</h1>
+        <p class="muted">Yuk, masuk lagi dan lanjut beresin tugasmu.</p>
+      </div>
+
+      <div id="flash"></div>
+      <div id="error" class="alert alert-error" role="alert" hidden></div>
+
+      <form id="login-form" class="form" novalidate>
+        <label for="email">Email
+          <input id="email" type="email" name="email" autocomplete="email" placeholder="nama@email.com" required autofocus>
+        </label>
+        <label for="password">Kata sandi
+          <input id="password" type="password" name="password" autocomplete="current-password" placeholder="Ketik kata sandimu" required>
+        </label>
+        <button class="btn btn-primary btn-block account-submit" type="submit">Masuk</button>
+      </form>
+
+      <p class="account-footer">Lupa kata sandi? Chat admin, ya.</p>
+      <p class="account-footer">Belum punya akun? <a href="register.html">Yuk, daftar</a></p>
+    </section>
+  </main>
+  <script src="store.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
